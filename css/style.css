@@ -1,0 +1,59 @@
+body {
+    background: url(../img/drums-bg.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+h1, p {
+    margin: 0;
+}
+
+.container {
+	display: flex;
+    flex-flow: row nowrap;
+    background: rgba(0,0,0,.7);
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 10px 10px 3px;
+}
+
+.button {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    margin-left: 7px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: .1s;
+    cursor: pointer;
+}
+
+.button > h1 {
+    color: white;
+}
+
+.button > p {
+	color: #edbf00;
+}
+
+.clicked {
+    background: rgba(255,255,255,0.6);
+    transform:  scale(0.9);
+}
+
+.button:hover, .button:focus {
+    background: rgba(255,255,255,0.3);
+}
+
+.button:active {
+	background: rgba(255,255,255,0.6);
+    transform:  scale(0.9);
+}
